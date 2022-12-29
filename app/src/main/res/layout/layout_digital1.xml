@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/relative_Layout_wid2layout"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/main_background2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:ellipsize="none"
+            android:fontFamily="@font/agencyfb"
+            android:format12Hour="EEEE"
+            android:singleLine="true"
+            android:text="Monday"
+            android:textColor="#4ffd03"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:id="@+id/text_view_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="@font/agencyfb"
+                android:format12Hour="hh:mm"
+                android:singleLine="true"
+                android:text="04:50"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/_40sdp"
+                android:textStyle="bold" />
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:ellipsize="none"
+                android:fontFamily="@font/agencyfb"
+                android:format12Hour="aa"
+                android:singleLine="true"
+                android:text="PM"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:ellipsize="none"
+            android:fontFamily="@font/agencyfb"
+            android:format12Hour="dd MMMM"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp"
+            android:singleLine="true"
+            android:text="15 November"
+            android:textColor="#4ffd03"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:id="@+id/text_view_Time"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="@font/montserrat"
+                android:format12Hour="hh"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_50sdp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:format12Hour="EEE"
+                    android:singleLine="true"
+                    android:text="Sat"
+                    android:textColor="#ff03e8"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="italic" />
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:format12Hour="MMM dd"
+                    android:text="Jan 13"
+                    android:textColor="#ff03e8"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="@font/montserrat"
+                android:format12Hour="mm"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="30"
+                android:textColor="#ff03e8"
+                android:textSize="@dimen/_50sdp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:format12Hour="ss"
+                    android:singleLine="true"
+                    android:text="44"
+                    android:textColor="#ff03e8"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="italic" />
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:format12Hour="aa"
+                    android:text="AM"
+                    android:textColor="#ff03e8"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/SecSegmentProgress"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_centerInParent="true"
+        app:cpv_barColor="#ff03e8"
+        app:cpv_barWidth="@dimen/_10sdp"
+        app:cpv_blockCount="200"
+        app:cpv_blockScale="0.11"
+        app:cpv_maxValue="60"
+        app:cpv_minValueAllowed="0"
+        app:cpv_rimColor="@color/progress_bg"
+        app:cpv_rimWidth="@dimen/_10sdp"
+        app:cpv_textSize="0dp"
+        app:cpv_value="35" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/minutes_progress_bar"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_centerInParent="true"
+        app:cpb_background_progressbar_color="@color/progress_bg"
+        app:cpb_background_progressbar_width="@dimen/_10sdp"
+        app:cpb_progress="0"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="60"
+        app:cpb_progressbar_color="#ff03e8"
+        app:cpb_progressbar_width="@dimen/_10sdp"
+        app:cpb_round_border="true" />
+</RelativeLayout>

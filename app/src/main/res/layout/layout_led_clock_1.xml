@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/seconds_progress_bar"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_210sdp"
+        android:layout_centerInParent="true"
+        app:cpb_background_progressbar_color="#3a3a3a"
+        app:cpb_background_progressbar_width="@dimen/_7sdp"
+        app:cpb_progress="0"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="60"
+        app:cpb_progressbar_color_direction="top_to_bottom"
+        app:cpb_progressbar_color_end="#91d92c"
+        app:cpb_progressbar_color_start="#f2d210"
+        app:cpb_progressbar_width="@dimen/_7sdp"
+        app:cpb_round_border="true" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/minutes_progress_bar"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_centerInParent="true"
+        app:cpb_background_progressbar_color="@color/progress_bg"
+        app:cpb_background_progressbar_width="@dimen/_9sdp"
+        app:cpb_progress="0"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="60"
+        app:cpb_progressbar_color_direction="top_to_bottom"
+        app:cpb_progressbar_color_end="#F14FB1"
+        app:cpb_progressbar_color_start="#ff00fd"
+        app:cpb_progressbar_width="@dimen/_9sdp"
+        app:cpb_round_border="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="none"
+            android:fontFamily="@font/droidsans"
+            android:format12Hour="EEEE"
+            android:padding="@dimen/_3sdp"
+            android:singleLine="true"
+            android:text="Monday"
+            android:textColor="#ff00fd"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:background="@drawable/layout_doted_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:id="@+id/text_view_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="@font/droidsans"
+                android:format12Hour="hh:mm"
+                android:singleLine="true"
+                android:text="04:50"
+                android:textColor="#f2d210"
+                android:textSize="@dimen/_40sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:ellipsize="none"
+                    android:fontFamily="@font/droidsans"
+                    android:format12Hour="ss"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="57"
+                    android:textColor="#f2d210"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextClock
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:ellipsize="none"
+                    android:fontFamily="@font/droidsans"
+                    android:format12Hour="aa"
+                    android:singleLine="true"
+                    android:text="PM"
+                    android:textColor="#f2d210"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:background="@drawable/layout_doted_line" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:ellipsize="none"
+            android:fontFamily="@font/droidsans"
+            android:format12Hour="dd MMM yyyy"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="15 Dec 2021"
+            android:textColor="#ff00fd"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

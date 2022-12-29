@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock607"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_607"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 601-603 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock601"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_601"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock602"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#54FF00"
+                        app:center_outer_color="#54FF00"
+                        app:clock_background="@drawable/dial_602"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#54FF00"
+                        app:minutes_needle_color="#54FF00"
+                        app:seconds_needle_color="#54FF00"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock608"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_608"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock603"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#00FFE4"
+                        app:center_outer_color="#00FFE4"
+                        app:clock_background="@drawable/dial_603"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#00FFE4"
+                        app:minutes_needle_color="#00FFE4"
+                        app:seconds_needle_color="#00FFE4"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 604-606 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock604"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_604"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock605"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_605"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/contrast"
+                android:gravity="center">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ad_view_rectangle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/app_banner" />
+            </LinearLayout>
+
+            <!-- 607-609 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock606"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_606"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="0"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="0"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock609"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_609"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 610-612 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock610"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_610"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock611"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_611"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock612"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_612"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock622"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_622"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 613-615 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock613"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_613"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock614"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_614"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/contrast"
+                android:gravity="center">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ad_view_rectangle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/app_banner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock615"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_615"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock633"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_633"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 616-618 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock616"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_616"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock617"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_617"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock618"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_618"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock635"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_635"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 619-621 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock619"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_619"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock620"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_620"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/contrast"
+                android:gravity="center">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ad_view_rectangle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/app_banner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock626"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_626"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock632"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_632"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 622-624 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock629"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_629"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock623"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#000000"
+                        app:center_outer_color="#000000"
+                        app:clock_background="@drawable/dial_623"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#000000"
+                        app:minutes_needle_color="#000000"
+                        app:seconds_needle_color="#000000"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!-- 625-627 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock624"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_624"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="0"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock621"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_621"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="0"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 628-630 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock628"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_628"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock627"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_627"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!-- 631-633 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/contrast"
+                android:gravity="center">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ad_view_rectangle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/app_banner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock630"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_630"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock634"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_634"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="0"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="0"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 634-636 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock631"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_631"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock625"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_625"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@color/contrast"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.arbelkilani.clock.Clock
+                        android:id="@+id/clock636"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="analogClockShow"
+                        app:center_inner_color="#ffffff"
+                        app:center_outer_color="#ffffff"
+                        app:clock_background="@drawable/dial_636"
+                        app:clock_type="analogical"
+                        app:clock_value_disposition="regular"
+                        app:clock_value_step="full"
+                        app:clock_value_type="none"
+                        app:hours_needle_color="#ffffff"
+                        app:minutes_needle_color="#ffffff"
+                        app:seconds_needle_color="#ffffff"
+                        app:show_border="false"
+                        app:show_center="true"
+                        app:show_degree="false"
+                        app:show_hours_values="true"
+                        app:show_minutes_value="false"
+                        app:show_seconds_needle="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

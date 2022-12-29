@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Always on Amoled Display Clock</string>
+    <string name="powered_by_lala_apps_studio">Powered By Center Spot Solutions</string>
+
+        <string name="title_smart">Smart</string>
+        <string name="title_analoge">Analog</string>
+        <string name="title_digital">Digital</string>
+    <string name="title_led">LED</string>
+        <string name="title_emoji">Emoji</string>
+
+</resources>

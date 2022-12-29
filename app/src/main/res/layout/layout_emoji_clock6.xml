@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ChangeBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contrast">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_emoji6"
+            app:lottie_speed="0.5" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@+id/lottie"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="#DF58ACD3"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:weightSum="2">
+
+            <TextClock
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:fontFamily="@font/montserrat"
+                android:format12Hour="dd EE"
+                android:padding="@dimen/_1sdp"
+                android:singleLine="true"
+                android:text="18 MON"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextClock
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:fontFamily="@font/montserrat"
+                android:format12Hour="MMMM"
+                android:gravity="end"
+                android:padding="@dimen/_1sdp"
+                android:singleLine="true"
+                android:text="January"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@+id/lottie"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_gradient_emoji">
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:ellipsize="none"
+                    android:fontFamily="@font/montserrat"
+                    android:format12Hour="hh"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:singleLine="true"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_45sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_gradient_emoji">
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:ellipsize="none"
+                    android:fontFamily="@font/montserrat"
+                    android:format12Hour="mm"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:singleLine="true"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_45sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_gradient_emoji">
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:ellipsize="none"
+                    android:fontFamily="@font/montserrat"
+                    android:format12Hour="ss"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:singleLine="true"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_45sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

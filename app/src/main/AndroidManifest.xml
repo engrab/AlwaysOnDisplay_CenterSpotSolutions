@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="locked"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TabLayout" />
+        <activity
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.PrivacyActivity"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.AnalogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.PreviewActivity"
+            android:autoRemoveFromRecents="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:theme="@style/AppTheme_NoActionBar"
+            android:turnScreenOn="true" />
+        <activity
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.AnimatedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.ClocksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoActionBar" />
+
+        <service android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.services.AnalogService" />
+        <service
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.services.SpeakService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.services.ReadNotification"
+            android:exported="false"
+            android:label="Notification"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ad_id" />
+    </application>
+
+</manifest>

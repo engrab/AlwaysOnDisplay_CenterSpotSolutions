@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/relative_Layout_wid2layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/digital10bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#f819c5"
+            android:ellipsize="none"
+            android:fontFamily="@font/droidsans"
+            android:format12Hour="dd MMM yyyy"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="15 Nov 2020"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:id="@+id/text_view_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="@font/droidsans"
+                android:format12Hour="hh:mm"
+                android:singleLine="true"
+                android:text="04:50"
+                android:textColor="#ff1a00"
+                android:textSize="@dimen/_40sdp" />
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:ellipsize="none"
+                android:fontFamily="@font/droidsans"
+                android:format12Hour="aa"
+                android:singleLine="true"
+                android:text="PM"
+                android:textColor="#ff1a00"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#f819c5"
+            android:ellipsize="none"
+            android:fontFamily="@font/droidsans"
+            android:format12Hour="EEEE"
+            android:padding="@dimen/_3sdp"
+            android:singleLine="true"
+            android:text="Monday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color1">#FF0000</color>
+    <color name="color2">#00FFE4</color>
+    <color name="color3">#FFFC00</color>
+    <color name="color4">#FFA200</color>
+    <color name="color5">#54FF00</color>
+    <color name="color6">#7800FF</color>
+    <color name="color7">#0006FF</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="yello">#fff600</color>
+
+    <color name="digi3">#00fcff</color>
+    <color name="digi4">#f7f7f7</color>
+    <color name="digi4bg">#ff0000</color>
+    <color name="digi5">#ffffff</color>
+    <color name="digi5bg">#005fef</color>
+    <color name="digi6">#ffffff</color>
+    <color name="digi8">#ff4200</color>
+    <color name="digi8bg">#f9faf7</color>
+
+    <color name="actionBarBg">#0c0c0c</color>
+
+    <color name="blue">#ff0000ff</color>
+    <color name="bluegg">#0036ff</color>
+    <color name="black">#000</color>
+    <color name="contrast">#000</color>
+<!--    <color name="contrast">#121722</color>-->
+    <color name="orange">#ff9200</color>
+    <color name="progress_bg">#3a3a3a</color>
+    <color name="red">#ff0000</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="bgBottomNavigation">#fe485a</color>
+</resources>

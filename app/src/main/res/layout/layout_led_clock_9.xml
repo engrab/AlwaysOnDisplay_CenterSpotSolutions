@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/seconds_progress_bar"
+        android:layout_width="@dimen/_162sdp"
+        android:layout_height="@dimen/_162sdp"
+        android:layout_centerInParent="true"
+        app:cpb_background_progressbar_color="@color/black"
+        app:cpb_background_progressbar_width="@dimen/_5sdp"
+        app:cpb_progress="0"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="60"
+        app:cpb_progressbar_color_direction="top_to_bottom"
+        app:cpb_progressbar_color_end="#6400e1"
+        app:cpb_progressbar_color_start="#3F51B5"
+        app:cpb_progressbar_width="@dimen/_5sdp"
+        app:cpb_round_border="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:ellipsize="none"
+            android:fontFamily="@font/aspirin_advance"
+            android:format12Hour="EEEE"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Sunday"
+            android:textColor="#008bff"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:id="@+id/text_view_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="@font/aspirin_advance"
+                android:format12Hour="hh:mm"
+                android:singleLine="true"
+                android:text="04:50"
+                android:textColor="#008bff"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:ellipsize="none"
+            android:fontFamily="@font/aspirin_advance"
+            android:format12Hour="dd MMM yyyy"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="16 Dec 2021"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.utils.CustomAnalogClockView
+        android:id="@+id/selectedClock"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_centerInParent="true"
+        android:scaleX="0.42"
+        android:scaleY="0.42" />
+</RelativeLayout>

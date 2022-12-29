@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_smart"
+        android:icon="@drawable/ic_smart"
+        android:title="@string/title_smart" />
+
+    <item
+        android:id="@+id/navigation_analog"
+        android:icon="@drawable/ic_analog"
+        android:title="@string/title_analoge" />
+
+    <item
+        android:id="@+id/navigation_digital"
+        android:icon="@drawable/ic_digital"
+        android:title="@string/title_digital" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_animated"-->
+<!--        android:icon="@drawable/ic_baseline_access_time_24"-->
+<!--        android:title="@string/title_animated" />-->
+    <item
+        android:id="@+id/navigation_led"
+        android:icon="@drawable/ic_led"
+        android:title="@string/title_led" />
+    <item
+        android:id="@+id/navigation_emoji"
+        android:icon="@drawable/ic_premium"
+        android:title="@string/title_emoji" />
+
+</menu>

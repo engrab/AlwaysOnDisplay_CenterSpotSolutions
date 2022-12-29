@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/relative_Layout_wid2layout"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_270sdp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/smart_background" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/blue"
+            android:ellipsize="none"
+            android:fontFamily="@font/airstrike"
+            android:format12Hour="EEEE"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:singleLine="true"
+            android:text="Monday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.utils.CustomAnalogClockView
+            android:id="@+id/selectedClock"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_centerInParent="true"
+            android:scaleX="0.42"
+            android:scaleY="0.42" />
+
+        <TextClock
+            android:id="@+id/text_view_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/blue"
+            android:ellipsize="none"
+            android:fontFamily="@font/airstrike"
+            android:format12Hour="hh:mm aa"
+            android:padding="@dimen/_3sdp"
+            android:singleLine="true"
+            android:text="04:50 PM"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
