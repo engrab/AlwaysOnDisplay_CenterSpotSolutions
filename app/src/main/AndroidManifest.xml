@@ -30,7 +30,7 @@
         <activity
             android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.TabLayout" />
+            android:theme="@style/AppTheme_NoActionBar" />
         <activity
             android:name="com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ui.SplashActivity"
             android:exported="true">
