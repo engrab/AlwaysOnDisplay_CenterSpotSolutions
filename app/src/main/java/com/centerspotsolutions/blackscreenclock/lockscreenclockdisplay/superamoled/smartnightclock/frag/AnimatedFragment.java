@@ -27,7 +27,7 @@ public class AnimatedFragment extends Fragment {
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentAnimatedBinding.inflate(inflater, container, false);
         setClickListeners();
-        loadBanner();
+
 
         return binding.getRoot();
     }
@@ -125,17 +125,6 @@ public class AnimatedFragment extends Fragment {
         clickFun(view);
     }
 
-    private void loadBanner() {
-        AdRequest adRequest2 = new AdRequest.Builder().build();
-        binding.adViewRectangle.loadAd(adRequest2);
-        binding.adViewRectangle.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                binding.adViewRectangle.setVisibility(View.VISIBLE);
-            }
-        });
-    }
 
 
 }

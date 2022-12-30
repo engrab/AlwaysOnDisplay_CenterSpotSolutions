@@ -34,22 +34,12 @@ public class DigitalFragments extends Fragment {
         binding = FragmentDigitalBinding
                 .inflate(inflater, container, false);
         setClickListeners();
-        loadBanner();
+
 
         return binding.getRoot();
     }
 
-    private void loadBanner() {
-        AdRequest adRequest2 = new AdRequest.Builder().build();
-        binding.adViewRectangle.loadAd(adRequest2);
-        binding.adViewRectangle.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                binding.adViewRectangle.setVisibility(View.VISIBLE);
-            }
-        });
-    }
+
 
 
 

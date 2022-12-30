@@ -42,7 +42,7 @@ public class ClocksActivity extends BaseActivity {
     private LayoutInflater mInflater;
     private int number = -1;
     private View mApplyClock;
-    private View viewCancel;
+
     private AdView banner;
     private View preview;
     private View theme;
@@ -75,7 +75,6 @@ public class ClocksActivity extends BaseActivity {
 
     private void CreateLisners() {
 
-        this.viewCancel.setOnClickListener(view -> finishActivity(view));
 
         preview.setOnClickListener(view -> displayPreviewActivity(view));
 
@@ -173,7 +172,6 @@ public class ClocksActivity extends BaseActivity {
         this.mSharedPreferences = getSharedPreferences("Settings", 0);
         this.mInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         this.previewLayout = findViewById(R.id.previewLayoutframeLayout);
-        this.viewCancel = findViewById(R.id.linear_layout_cancel_action);
         View findViewById = findViewById(R.id.linear_layout_theme);
         this.theme = findViewById;
         if (booleanExtra) {

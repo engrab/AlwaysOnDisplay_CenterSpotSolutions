@@ -40,7 +40,7 @@ public class AnalogFragment extends Fragment {
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentAnalogBinding.inflate(inflater, container, false);
         setClickListeners();
-        loadBanner();
+
 
         return binding.getRoot();
     }
@@ -286,52 +286,6 @@ public class AnalogFragment extends Fragment {
         startActivity(intent);
 
         AdsUtils.showInterstitial(getContext());
-    }
-
-    private void loadBanner() {
-        AdRequest adRequest2 = new AdRequest.Builder().build();
-        binding.adViewRectangle1.loadAd(adRequest2);
-        binding.adViewRectangle1.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                binding.adViewRectangle1.setVisibility(View.VISIBLE);
-            }
-        });
-
-
-
-        AdRequest adRequest3 = new AdRequest.Builder().build();
-        binding.adViewRectangle2.loadAd(adRequest3);
-        binding.adViewRectangle2.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                binding.adViewRectangle2.setVisibility(View.VISIBLE);
-            }
-        });
-
-
-        AdRequest adRequest4 = new AdRequest.Builder().build();
-        binding.adViewRectangle3.loadAd(adRequest4);
-        binding.adViewRectangle3.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                binding.adViewRectangle3.setVisibility(View.VISIBLE);
-            }
-        });
-
-
-        AdRequest adRequest5 = new AdRequest.Builder().build();
-        binding.adViewRectangle4.loadAd(adRequest5);
-        binding.adViewRectangle4.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                binding.adViewRectangle4.setVisibility(View.VISIBLE);
-            }
-        });
     }
 
 

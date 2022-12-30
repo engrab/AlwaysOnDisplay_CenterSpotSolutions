@@ -48,7 +48,6 @@ public class AnalogActivity extends BaseActivity {
         this.mClockNum = getIntent().getIntExtra("clockNumber", 1);
         this.mClock = findViewById(R.id.clock_view);
 
-        Log.d(TAG, "onCreate: clock: " + mClockNum);
 
         View findViewById = findViewById(R.id.linear_layout_analog_digital_time);
         this.analogDigitalTime = findViewById;
@@ -61,7 +60,6 @@ public class AnalogActivity extends BaseActivity {
             findViewById.setVisibility(View.GONE);
         }
 
-        findViewById(R.id.linear_layout_cancel_action).setOnClickListener(view -> finish(view));
 
         findViewById(R.id.linear_layout_preview).setOnClickListener(view -> displayPreviewActivity(view));
 
@@ -70,8 +68,6 @@ public class AnalogActivity extends BaseActivity {
             AdsUtils.showInterstitial(this);
         });
 
-        LinearLayout linearLayout = findViewById(R.id.linear_layout_theme);
-        linearLayout.setVisibility(View.GONE);
 
 
         mBanner =AdsUtils.showBanner(this, findViewById(R.id.ad_view_smart));

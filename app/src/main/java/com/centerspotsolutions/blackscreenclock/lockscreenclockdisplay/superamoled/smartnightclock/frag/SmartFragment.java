@@ -33,15 +33,7 @@ public class SmartFragment extends Fragment implements View.OnClickListener {
         binding = FragmentSmartBinding.inflate(inflater, container, false);
         setClickListeners();
 
-        AdRequest adRequest2 = new AdRequest.Builder().build();
-        binding.adViewRectangle1.loadAd(adRequest2);
-        binding.adViewRectangle1.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                binding.adViewRectangle1.setVisibility(View.VISIBLE);
-            }
-        });
+
 
         return binding.getRoot();
     }

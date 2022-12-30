@@ -166,55 +166,7 @@
                 android:textSize="@dimen/_13sdp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linear_layout_theme"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:src="@drawable/icon_animation" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:text="Animation"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13sdp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_layout_cancel_action"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:src="@drawable/layout_close" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:text="Cancel"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13sdp" />
-        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

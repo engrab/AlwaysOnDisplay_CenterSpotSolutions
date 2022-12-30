@@ -21,14 +21,20 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.R;
+import com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.ads.AdsUtils;
 import com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.frag.AnalogFragment;
 import com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.frag.AnimatedFragment;
 import com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.frag.DigitalFragments;
 import com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.frag.PreFragment;
 import com.centerspotsolutions.blackscreenclock.lockscreenclockdisplay.superamoled.smartnightclock.frag.SmartFragment;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.play.core.review.ReviewInfo;
+import com.google.android.play.core.review.ReviewManager;
+import com.google.android.play.core.review.ReviewManagerFactory;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     ViewPager viewPager;
@@ -36,16 +42,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     TabLayout tabLayout;
     DrawerLayout drawer;
     private NavigationView navigationView;
+    AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        adView = AdsUtils.showBanner(this, findViewById(R.id.llAds));
 
         initView();
         initViewpager();
 
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (adView != null)
+            adView.pause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (adView != null)
+            adView.destroy();
+        super.onDestroy();
     }
 
     private void initViewpager() {
@@ -144,17 +166,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 @Override
                 public void onClick(View view) {
                     dialog.dismiss();
-                    String url = "https://play.google.com/store/apps/details?id=" + getPackageName();
-                    Uri uri = Uri.parse(url);
-                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                    if (intent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(intent);
-                    }
+                    showRatingDialog();
                 }
             });
 
         } catch (Exception ignored) {
         }
+    }
+
+    private void showRatingDialog() {
+        // If using Java
+        ReviewManager manager = ReviewManagerFactory.create(this);
+        Task<ReviewInfo> request = manager.requestReviewFlow();
+        request.addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                // We can get the ReviewInfo object
+                ReviewInfo reviewInfo = task.getResult();
+                Task<Void> flow = manager.launchReviewFlow(this, reviewInfo);
+                flow.addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+
+                    }
+                });
+            } else {
+                // There was some problem, continue regardless of the result.
+                // you can show your own rate dialog alert and redirect user to your app page
+                // on play store.
+            }
+        });
     }
 
     public class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -167,13 +207,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         public Fragment getItem(int position) {
             Fragment fragment = null;
             if (position == 0) {
-                fragment = new SmartFragment();
-            } else if (position == 1) {
                 fragment = new AnalogFragment();
+            } else if (position == 1) {
+                fragment = new AnimatedFragment();
             } else if (position == 2) {
                 fragment = new DigitalFragments();
             } else if (position == 3) {
-                fragment = new AnimatedFragment();
+                fragment = new SmartFragment();
             } else if (position == 4) {
                 fragment = new PreFragment();
             }
@@ -190,13 +230,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         public CharSequence getPageTitle(int position) {
             String title = null;
             if (position == 0) {
-                title = "Smart";
-            } else if (position == 1) {
                 title = "Analog";
+            } else if (position == 1) {
+                title = "LED";
             } else if (position == 2) {
                 title = "Digital";
             } else if (position == 3) {
-                title = "LED";
+                title = "Smart";
             } else if (position == 4) {
                 title = "Emoji";
             }

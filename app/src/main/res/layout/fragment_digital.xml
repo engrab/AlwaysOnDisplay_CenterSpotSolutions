@@ -233,23 +233,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_1sdp"
-                android:background="@color/contrast"
-                android:gravity="center">
-
-                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/ad_view_rectangle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:visibility="gone"
-                    ads:adSize="MEDIUM_RECTANGLE"
-                    ads:adUnitId="@string/app_banner" />
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -317,14 +300,6 @@
                     android:onClick="analogClockShow"
                     android:src="@drawable/test" />
             </LinearLayout>
-
-            <FrameLayout
-                android:id="@+id/frame_layout_ad_placeholder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_4sdp"
-                android:layout_marginBottom="@dimen/_4sdp"
-                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="match_parent"
